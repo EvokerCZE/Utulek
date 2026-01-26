@@ -10,7 +10,7 @@ namespace Utulek
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Dobrý den!");
+            Console.WriteLine("Dobrý večer!");
         }
     }
 }
