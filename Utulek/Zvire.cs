@@ -8,6 +8,6 @@ namespace Utulek
 {
     internal class Zvire
     {
-        Console.WriteLine("ahoj");
+
     }
 }
