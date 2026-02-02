@@ -13,8 +13,8 @@ namespace Utulek
         public string Pohlavi {get;set;}
         public bool Adoptovano {get;set;}
         public int Vek {get;set;}
-        public static int ID {get;set;}
-        public DateTime DatumPrijmu { get; set; }
+        public int ID {get;set;}
+        public DateTime DatumPrijmu { get; set;}
         public string ZdravotniStav { get; set; }
         public string Poznamka { get; set; }
 
