@@ -9,7 +9,6 @@ namespace Utulek
     internal class Evidence
     {
         private List<Zvire> zvirata = new List<Zvire>();
-        private int dalsiId = 1;
 
         public Evidence()
         {
