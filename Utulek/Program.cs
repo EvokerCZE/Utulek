@@ -10,7 +10,9 @@ namespace Utulek
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Dobrý večer!");
+            Evidence evidence = new Evidence();
+            KonzoleUI ui = new KonzoleUI(evidence);
+            ui.Spustit();
         }
     }
 }
