@@ -10,6 +10,9 @@ namespace Utulek
     {
         static void Main(string[] args)
         {
+            Evidence evidence = new Evidence();
+            KonzoleUI ui = new KonzoleUI(evidence);
+            ui.Spustit();
 
         }
     }
