@@ -13,6 +13,7 @@ namespace Utulek
             Evidence evidence = new Evidence();
             KonzoleUI ui = new KonzoleUI(evidence);
             ui.Spustit();
+
         }
     }
 }
