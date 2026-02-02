@@ -14,11 +14,11 @@ namespace Utulek
         public bool Adoptovano {get;set;}
         public int Vek {get;set;}
         public static int ID {get;set;}
-        public DateTime DatumPrijmu { get; }
+        public DateTime DatumPrijmu { get; set;}
         public string ZdravotniStav { get; set; }
         public string Poznamka { get; set; }
 
-        public Zvire(string jmeno, string druh, string pohlavi, bool adoptovano, int vek, DateTime datumPrijmu, string zdravotniStav, string? poznamka = null)
+        public Zvire(string jmeno, string druh, string pohlavi, bool adoptovano, int vek, DateTime datumPrijmu, string zdravotniStav, string poznamka = null)
     {
         Jmeno = jmeno;
         Druh = druh;
