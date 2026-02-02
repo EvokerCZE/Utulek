@@ -30,5 +30,10 @@ namespace Utulek
         ZdravotniStav = zdravotniStav;
         Poznamka = poznamka;
     }
+    public override string ToString()
+    {
+            return $"{Id,-3} | {Jmeno,-10} | {Druh,-8} | {Vek,3} | {Pohlavi,-5} | " +
+                   $"{(Adoptovano ? "ANO" : "NE"),-3}";
+    }
     }
 }
