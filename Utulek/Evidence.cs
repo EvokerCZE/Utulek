@@ -8,46 +8,49 @@ namespace Utulek
 {
     internal class Evidence
     {
-        private List<Zvire> zvireta = new List<Zvire>();
+        private List<Zvire> zvirata = new List<Zvire>();
         private int dalsiId = 1;
 
         public Evidence()
         {
             PridatZvire(new Zvire
-            {
-                Jmeno = "Azor",
-                Druh = "Pes",
-                Vek = 4,
-                Pohlavi = "M",
-                DatumPrijmu = DateTime.Today.AddDays(-30),
-                ZdravotniStav = "OK"
-            });
+            (
+                "Azor",
+                "Pes",
+                "M",
+                true,
+                4,
+                DateTime.Today.AddDays(-30),
+                "OK",
+                ""
+            ));
 
             PridatZvire(new Zvire
-            {
-                Jmeno = "Micka",
-                Druh = "Kočka",
-                Vek = 2,
-                Pohlavi = "F",
-                DatumPrijmu = DateTime.Today.AddDays(-10),
-                ZdravotniStav = "OK"
-            });
+            (
+                "Micka",
+                "Kočka",
+                "F",
+                false,
+                2,
+                DateTime.Today.AddDays(-10),
+                "OK",
+                "Potřebuje očkování"
+            ));
         }
 
         public void PridatZvire(Zvire z)
         {
-            z.Id = dalsiId++;
-            zvireta.Add(z);
+            zvirata.Add(z);
         }
 
         public List<Zvire> VratVse()
         {
-            return zvireta;
+            return zvirata;
         }
 
         public List<Zvire> Filtrovat(string druh, int? vekOd, int? vekDo, string jmeno)
         {
-            return zvireta.Where(z =>
+            return zvirata.Where(z =>
                 (string.IsNullOrEmpty(druh) || z.Druh.ToLower().Contains(druh.ToLower())) &&
                 (!vekOd.HasValue || z.Vek >= vekOd) &&
                 (!vekDo.HasValue || z.Vek <= vekDo) &&
@@ -57,7 +60,7 @@ namespace Utulek
 
         public bool OznacitAdopci(int id)
         {
-            var zvire = zvireta.FirstOrDefault(z => z.Id == id);
+            var zvire = zvirata.FirstOrDefault(z => z.ID == id);
             if (zvire == null || zvire.Adoptovano) return false;
 
             zvire.Adoptovano = true;
