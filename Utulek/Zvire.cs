@@ -18,7 +18,7 @@ namespace Utulek
         public string ZdravotniStav { get; set; }
         public string Poznamka { get; set; }
 
-        public Zvire(string jmeno, string druh, string pohlavi, bool adoptovano, int vek, DateTime datumPrijmu, string zdravotniStav, string? poznamka = null)
+        public Zvire(string jmeno, string druh, string pohlavi, bool adoptovano, int vek, DateTime datumPrijmu, string zdravotniStav, string poznamka = null)
     {
         Jmeno = jmeno;
         Druh = druh;

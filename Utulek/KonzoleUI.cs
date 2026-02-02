@@ -47,27 +47,40 @@ namespace Utulek
 
         private void Pridani()
         {
-            Zvire z = new Zvire();
+            
 
             Console.Write("Jméno: ");
-            z.Jmeno = Console.ReadLine();
+            string Jmeno = Console.ReadLine();
 
-            Console.Write("Druh: ");
-            z.Druh = Console.ReadLine();
+            Console.Write("Adoptované? (y/n): ");
+            string moznost = Console.ReadLine();
+            bool Adoptovano = false;
+            if (moznost == "y")
+            {
+                Adoptovano = true;
+            }
+            else
+            {
+                Adoptovano = false;
+            }
 
-            z.Vek = NactiInt("Věk: ");
+                Console.Write("Druh: ");
+            string Druh = Console.ReadLine();
+
+            int Vek = NactiInt("Věk: ");
 
             Console.Write("Pohlaví: ");
-            z.Pohlavi = Console.ReadLine();
+            string Pohlavi = Console.ReadLine();
 
-            z.DatumPrijmu = DateTime.Today;
+            DateTime DatumPrijmu = DateTime.Today;
 
             Console.Write("Zdravotní stav: ");
-            z.ZdravotniStav = Console.ReadLine();
+            string ZdravotniStav = Console.ReadLine();
 
             Console.Write("Poznámka (volitelné): ");
-            z.Poznamka = Console.ReadLine();
+            string Poznamka = Console.ReadLine();
 
+            Zvire z = new Zvire(Jmeno, Druh, Pohlavi,Adoptovano,Vek,DatumPrijmu,ZdravotniStav,Poznamka );
             evidence.PridatZvire(z);
             Console.WriteLine("Zvíře přidáno.");
         }

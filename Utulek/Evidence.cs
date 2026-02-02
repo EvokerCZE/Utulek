@@ -64,7 +64,6 @@ namespace Utulek
             if (zvire == null || zvire.Adoptovano) return false;
 
             zvire.Adoptovano = true;
-            zvire.DatumAdopce = DateTime.Today;
             return true;
         }
     }
