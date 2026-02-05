@@ -27,7 +27,7 @@ Tento projekt je postaven na následujících technologiích:
 
 ## 🖥️ Na projektu se podíleli
 
-- **EvokerCZE (majitel repozitáře, třída Evidence.cs)
-- **mistrbartak (kolaborant, třída Program.cs)
-- **TritonEnigmatico (kolaborant, třída Zvire.cs)
-- **mistrmichal (kolaborant, třída KonzoleUI.cs)
+- **EvokerCZE** (majitel repozitáře, třída Evidence.cs)
+- **mistrbartak** (kolaborant, třída Program.cs)
+- **TritonEnigmatico** (kolaborant, třída Zvire.cs)
+- **mistrmichal** (kolaborant, třída KonzoleUI.cs)
