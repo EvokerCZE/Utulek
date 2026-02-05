@@ -26,11 +26,3 @@ Tento projekt je postaven na následujících technologiích:
 * **Jazyk:** C#
 * **Framework:** .NET 6
 * **IDE:** Visual Studio 2022
-
-## computer: Instalace a spuštění
-
-Pro spuštění projektu na lokálním stroji postupujte následovně:
-
-1. **Naklonujte repozitář:**
-   ```bash
-   git clone [https://github.com/EvokerCZE/Utulek.git](https://github.com/EvokerCZE/Utulek.git)
